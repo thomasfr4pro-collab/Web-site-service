@@ -1,0 +1,22 @@
+{
+  "name": "sales-cycle-consultant-backend",
+  "version": "1.0.0",
+  "description": "Backend API for Sales Cycle Consultant",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "@anthropic-ai/sdk": "^0.20.0",
+    "puppeteer": "^21.6.1",
+    "uuid": "^9.0.1"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

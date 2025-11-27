@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Cycle Consultant - Réduisez votre cycle de vente</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <div class="header-content">
+        <h1>⚡ Sales Cycle Consultant</h1>
+        <p class="tagline">Diagnostiquez et réduisez votre cycle de vente en 15 minutes</p>
+      </div>
+    </header>
+
+    <!-- Chat Interface -->
+    <main class="main-content">
+      <div id="chat-view" class="chat-view active">
+        <div id="chat-container" class="chat-container">
+          <!-- Messages apparaîtront ici -->
+        </div>
+
+        <div class="input-container">
+          <textarea
+            id="user-input"
+            class="user-input"
+            placeholder="Tapez votre réponse ici..."
+            rows="3"
+          ></textarea>
+          <button id="send-button" class="send-button">
+            <span class="button-text">Envoyer</span>
+            <span class="button-icon">→</span>
+          </button>
+        </div>
+
+        <div id="action-buttons" class="action-buttons hidden">
+          <button id="generate-report-button" class="action-button primary">
+            📊 Générer le rapport complet
+          </button>
+        </div>
+      </div>
+
+      <!-- Report View -->
+      <div id="report-view" class="report-view">
+        <div class="report-header">
+          <h2>📊 Votre Rapport de Diagnostic</h2>
+          <div class="report-actions">
+            <button id="download-pdf-button" class="action-button primary">
+              📥 Télécharger PDF
+            </button>
+            <button id="back-to-chat-button" class="action-button secondary">
+              ← Retour au chat
+            </button>
+          </div>
+        </div>
+        <div id="report-content" class="report-content">
+          <!-- Le rapport HTML sera injecté ici -->
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>💡 Aucune donnée n'est stockée. Cette session est 100% anonyme et temporaire.</p>
+    </footer>
+  </div>
+
+  <!-- Loading Overlay -->
+  <div id="loading-overlay" class="loading-overlay hidden">
+    <div class="loading-spinner"></div>
+    <p class="loading-text">Réflexion en cours...</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
